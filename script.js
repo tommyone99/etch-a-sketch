@@ -9,7 +9,12 @@ for (let i = 0; i < 16; i++) {
             div.style.width = "60px";
             div.style.height = "60px";
             div.style.border = "black solid 1px";
+            div.addEventListener("mousemove", bgBlack);
             row.appendChild(div);
         };
     canvas.appendChild(row);
 };
+
+function bgBlack(e) {
+    e.target.style.backgroundColor = "black";
+}
