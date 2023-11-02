@@ -1,4 +1,7 @@
 const canvas = document.querySelector("#canvas");
+const button = document.querySelector("#newGrid");
+
+button.addEventListener("click", newGrid);
 
 for (let i = 0; i < 16; i++) {
     const row = document.createElement("div");
