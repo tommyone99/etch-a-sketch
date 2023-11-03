@@ -21,7 +21,7 @@ function createGrid(n) {
             for (let i = 0; i < n; i++) {
                 const div = document.createElement("div");
                 div.style.width = "60px";
-                div.style.height = "60px";
+                div.style.aspectRatio = "1/1";
                 div.style.border = "black solid 1px";
                 div.addEventListener("mousemove", bgBlack);
                 row.appendChild(div);
